@@ -1,0 +1,238 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikRegular.otf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'Graphik';
+    src: url('fonts/GraphikBold.otf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+}
+
+:root {
+    --primary-blue-color: #2091F9;
+    --white-color: #FFFFFF;
+    --primary-gray-color: #252B42;
+    --secondary-gray-color: #374754;
+    --primary-bg-gray: #F4F4F4;
+    --input-text-color: #18171D;
+    --border-color: #D8D8D8;
+    --border-pricing-item-color: #DEDEDE;
+    --shadow-pricing-item: rgba(0, 0, 0, 0.25);
+    --border-contacts-form: #DDDDDD;
+    --shadow-contacts-form: rgba(0, 0, 0, 0.07);
+    --contacts-form-input-bg: #F5F5F5;
+    --border-form-color: #E8E8E8;
+}
+
+img {
+    display: block;
+}
+
+
+body {
+    font-family: 'Graphik', sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+
+a {
+    text-decoration: none;
+    font-style: normal;
+}
+
+ul {
+    list-style: none;
+}
+
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+
+    white-space: nowrap;
+    clip-path: inset(100%);
+    clip: rect(0, 0, 0, 0);
+    overflow: hidden;
+}
+
+/* .icon {} */
+
+.section {
+    padding: 50px 166px 50px 166px;
+}
+
+.button {
+    background-color: var(--primary-blue-color);
+    border: none;
+    border-radius: 50px;
+    text-align: center;
+    padding: 16px 62px;
+    cursor: pointer;
+
+    font-size: 20px;
+    line-height: 1;
+    letter-spacing: 0.2px;
+    color: var(--white-color);
+}
+
+/* header */
+.header-wrap {
+    background-image: url(images/Rectangle.png);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.header__section {
+    padding: 0 166px;
+    display: flex;
+    align-items: center;
+}
+
+.navigation {
+    padding: 55px 0;
+}
+
+.navigation__list {
+    display: flex;
+    gap: 21px;
+}
+
+.navigation__list-item {
+    font-size: 15px;
+    line-height: 1.8667;
+    letter-spacing: 0.2px;
+    color: var(--white-color);
+    padding: 10px;
+}
+
+.navigation__item:last-child {
+    margin-right: 5px;
+}
+
+.logo {
+    margin-right: auto;
+}
+
+.header__social {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+.header__social-link {
+    display: block;
+}
+
+.header__social-icon {
+    fill: var(--white-color);
+}
+
+/* hero */
+
+.hero-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0 358px 0;
+}
+
+.hero-container {
+    max-width: 765px;
+    margin: auto;
+}
+
+.hero__title {
+    font-weight: 700;
+    font-size: 74px;
+    line-height: 1.1351;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--white-color);
+    margin-bottom: 17px;
+}
+
+.hero__undertitle {
+    font-size: 28px;
+    line-height: 1.4285;
+    text-align: center;
+    letter-spacing: 0.2px;
+    color: var(--white-color);
+    margin-bottom: 80px;
+}
+@media screen and (max-width: 768px) {
+
+    .header__section {
+      padding: 0 16px;
+      display: flex;
+      align-items: center;
+    }
+  
+    .navigation {
+      position: absolute;
+      top: 100%;
+      left: 0; 
+  width: 100%;
+  background-color: #fff;
+  padding: 16px;
+  display: none;
+  }
+  
+  .navigation--active {
+  display: block;
+  }
+  
+  .navigation__list {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  }
+  
+  .navigation__item:last-child {
+  margin-right: 0;
+  }
+  
+  .logo {
+  margin-right: auto;
+  }
+  
+  .header__social {
+  display: none;
+  }
+  
+  .burger-menu {
+  display: block;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  }
+  
+  .burger-menu__icon {
+  display: block;
+  width: 24px;
+  height: 2px;
+  background-color: #fff;
+  margin-bottom: 4px;
+  }
+  
+  .burger-menu__icon:last-child {
+  margin-bottom: 0;
+  }
+  
+  }
