@@ -1,91 +1,16 @@
 .newsletter {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    height: 638px;
-    top: 44px;
-    left: -108.23px;
-    padding: 0px 50px;
-  }
-  
-  .newsletter__image {
-  }
-  
-  .newsletter__content {
-    max-width: 500px;
-  }
-  
-  .newsletter_subtitle {
-    font-family: 'Graphik' sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    margin-bottom: 17px;
-    color: #252B42;
-  }
-  .newsletter__subtitle {
-    font-family: 'Graphik' sans-serif;
-    font-style: normal;
-    font-weight: 700;
-    font-size: 20px;
-    line-height: 28px;
-    letter-spacing: 0.1px;
-    color: #252B42;
-  }
-  
-  .newsletter__title {
-    font-size: 3rem;
-    font-weight: 800;
-    margin-bottom: 10px;
-    font-family: 'Graphik' sans-serif;
-    font-style: normal;
-    font-weight: 400;
-    font-size: 48px;
-    line-height: 55px;
-    letter-spacing: 0.2px;
-    margin-bottom: 35px;
-    color: #252B42;
-  }
-  
-  .newsletter__description {
-  
-  font-family: 'Graphik' sans-serif;
-  font-style: normal;
-  font-weight: 400;
+
+}
+.newsletter__form p {
   font-size: 18px;
   line-height: 25px;
-  letter-spacing: 0.2px;
-  margin-bottom: 36px;
-  color: #374754;
-  
-  
-  
-  
-  
-  }
-  
-  .newsletter__input {
-    padding: 10px;
-    font-size: 1.1rem;
-    border: none;
-    border-radius: 5px;
-    margin-right: 10px;
-  }
-  
-  .newsletter__button {
-    padding: 10px 20px;
-    background-color: #0095f6;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    font-size: 1.1rem;
-    cursor: pointer;
-    font-family: 'Graphik', sans-serif;
-    font-style: normal;
-  }
-  .newsletter__form{
-    display: flex;
-  }
-  
+  margin-bottom: 1rem;
+  margin-top: 1rem;
+}
+
+.newsletter__image img {
+  width: 100%;
+  object-fit: contain;
+  margin-bottom: 2rem;
+  margin-top: 2rem;
+}

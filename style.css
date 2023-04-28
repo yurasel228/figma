@@ -31,5 +31,67 @@ img{
     --color-for-form-input: rgb(34, 34, 34);
     --color-for-form-input-text: rgb(181, 181, 181);
     --color-for-menu-burger : rgba(0, 0, 0, 0.9);
+    --accent-color: #2091F9;
+    --backgrond-color: #252B42;
+    --contrast-color: #FFFFFF;
+    --input-color: #F4F4F4;
+    --input-border-color: #E8E8E8;
+    font-family: 'Montserrat';
+    font-style: normal;
+    font-weight: 400;
     scroll-behavior: smooth;
+    text-align: center;
+    letter-spacing: 0.2px;
+    scroll-behavior: smooth;
+}
+img {
+  display: block;
+  margin: 0 auto;
+}
+.container {
+  max-width: 1200px;
+  margin: auto;
+}
+.button-bold-text {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 35px;
+  border-style: none;
+  color: var(--contrast-color);
+  font-size: 20px;
+  font-weight: 600;
+  padding: 16px 48px;
+  display: inline-block;
+  white-space: nowrap;  
+
+}
+
+.button-main-text {
+  background: var(--accent-color);
+  border-color: var(--accent-color);
+  border-radius: 35px;
+  border-style: none;
+  color: var(--contrast-color);
+  font-size: 20px;
+  padding: 16px 48px;
+  display: inline-block;
+  white-space: nowrap;  
+}
+.input-text {
+  font-size: 14px;
+  padding: 16px 48px;
+  display: inline-block;
+  white-space: nowrap;  
+  background: var(--input-color);
+  border: 1px solid var(--input-border-color);
+  border-radius: 39px;
+}
+.input-text-area {
+  font-size: 14px;
+  padding: 16px 48px;
+  display: inline-block;
+  white-space: nowrap;  
+  background: var(--input-color);
+  border: 1px solid var(--input-border-color);
+
 }
