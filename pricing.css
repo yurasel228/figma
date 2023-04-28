@@ -54,8 +54,27 @@
     padding: 40px;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    margin: 0 10px;
+    max-width: 300px;
+  }
+  .pricing__block:hover {
+    transform: scale(1.05);
+    background-color: #f5f5f5;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   }
   
+  .button:hover {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .pricing__block-button-standart {
+    background-color: #007bff;
+    color: #fff;
+  }
   .pricing__block--free {
     margin-right: 50px;
   }

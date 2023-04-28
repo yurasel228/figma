@@ -57,21 +57,7 @@ ul {
 }
 
 
-.visually-hidden {
-    position: absolute;
-    width: 1px;
-    height: 1px;
-    margin: -1px;
-    border: 0;
-    padding: 0;
 
-    white-space: nowrap;
-    clip-path: inset(100%);
-    clip: rect(0, 0, 0, 0);
-    overflow: hidden;
-}
-
-/* .icon {} */
 
 .section {
     padding: 50px 166px 50px 166px;
@@ -84,14 +70,15 @@ ul {
     text-align: center;
     padding: 16px 62px;
     cursor: pointer;
-
+    border: none;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
     font-size: 20px;
     line-height: 1;
     letter-spacing: 0.2px;
     color: var(--white-color);
 }
 
-/* header */
 .header-wrap {
     background-image: url(images/Rectangle.png);
     background-size: cover;
@@ -144,7 +131,6 @@ ul {
     fill: var(--white-color);
 }
 
-/* hero */
 
 .hero-section {
     display: flex;
@@ -216,23 +202,4 @@ ul {
   display: none;
   }
   
-  .burger-menu {
-  display: block;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  }
-  
-  .burger-menu__icon {
-  display: block;
-  width: 24px;
-  height: 2px;
-  background-color: #fff;
-  margin-bottom: 4px;
-  }
-  
-  .burger-menu__icon:last-child {
-  margin-bottom: 0;
-  }
-  
-  }
+}
