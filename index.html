@@ -1,316 +1,360 @@
 <!DOCTYPE html>
 <html class="page" lang="en">
-  <head>
-    <meta class="meta" charset="UTF-8">
-    <meta class="meta" http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta class="meta" name="viewport" content="width=device-width, initial-scale=1.0">
-    <title class="title">Cart</title>
-    <link class="link" rel="stylesheet" href="style.css">
-  </head>
+
+<head>
+	<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+	<meta class="meta" charset="UTF-8">
+	<meta class="meta" http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta class="meta" name="viewport" content="width=device-width, initial-scale=1.0">
+	<title class="title">Cart</title>
+	<link class="link" rel="stylesheet" href="style.css">
+</head>
+
 <body>
-  <header class="header-wrap">
-    <div class="header__section">
-      <nav class="navigation" id="navigation">
-        <ul class="navigation__list">
-          <li class="navigation__item">
-            <a href="#" class="navigation__list-item">Home</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__list-item">Product</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#prising" class="navigation__list-item">Pricing</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__list-item">About</a>
-          </li>
-          <li class="navigation__item">
-            <a href="#" class="navigation__list-item">Contact</a>
-          </li>
-        </ul>
-      </nav>
-      <a href="#" class="logo"><img src="images/coverimages.png" alt="logo" /></a>
-      <ul class="header__social">
-        <li class="header__social-item">
-          <a class="header__social-link header__social-link--twitter" href="#">
-            <img class="header__social-icon" viewBox="0 0 100 100" src="images/vector12.png"  height="41">
-          </img>
-          </a>
-        </li>
-        <li class="header__social-item">
-          <a class="header__social-link header__social-link--facebook" href="#">
-            <img class="header__social-icon" viewBox="0 0 100 100" height="41" src="images/vector13.png" >
-          </img>
-          </a>
-        </li>
-        <li class="header__social-item">
-          <a class="header__social-link header__social-link--linkedin" href="#">
-            <img class="header__social-icon" viewBox="0 0 100 100"  src="images/Vector14.png"height="41">
-          </img>
-          </a>
-        </li>
-      </ul>
-    </div>
-    <section class="section hero-section">
-      <div class="hero-container">
-        <h1 class="hero__title">The best products start with Figma</h1>
-        <p class="hero__undertitle">
-          Most calendars are designed for teams. Slate is designed for
-          freelancers
-        </p>
-      </div>
-      <button class="button" type="button">Try For Free</button>
-    </section>
-  </header>
-      <main class="container">
-        <section id="product" class="main-text">
-            <h2 class="main-text__title">Features</h2>
-            <p class="main-text__text">Most calendars are designed for teams</p>
-            <div class="main-text__features">
-                <div class="main-text__features-item">
-                    <img src="images/circle.png" alt="Drawing">
-                    <h3 class="main-text__title-low">OpenType features Variable fonts</h3>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                </div>
-                <div class="main-text__features-item">
-                    <img src="images/draw.png" alt="Draw">
-                    <h3 class="main-text__title-low">Design with real data</h3>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                </div>
-                <div class="main-text__features-item">
-                    <img src="images/pnsel.png" alt="Brush">
-                    <h3 class="main-text__title-low">Fastetst way to take action</h3>
-                    <p>Slate helps you see how many more days you need to work to reach your financial goal</p>
-                </div>
-                <div class="main-text__image">
-                  <img src="images/screen.png" alt="Screen">
-              </div>
-            </div>
-
-            <div class="call-to-action">
-                <div class="call-to-action__item">
-                    <h2 class="main-text__title">Fastets way to organize</h2>
-                    <p class="main-text__text">Most calendars are designed for teams</p>
-                    <button class="button-bold-text">Try for Free</button>
-                </div>
-                <div class="call-to-action__image">
-                    <img src="images/Frame 18.png" alt="Screen">
-                </div>
-            </div>
-        </section>
-        <section class="newsletter">
-            <div class="newsletter__title">
-                <h3 class="main-text__title-low">At your fingertips</h3>
-                <h2 class="main-text__title">Lightning fast 
+	<header class="header-wrap">
+		<div class="header__section">
+			<nav class="navigation" id="navigation">
+				<ul class="navigation__list">
+					<li class="navigation__item"> <a href="#" class="navigation__list-item">Home</a>
+					</li>
+					<li class="navigation__item"> <a href="#" class="navigation__list-item">Product</a>
+					</li>
+					<li class="navigation__item"> <a href="#prising" class="navigation__list-item">Pricing</a>
+					</li>
+					<li class="navigation__item"> <a href="#" class="navigation__list-item">About</a>
+					</li>
+					<li class="navigation__item"> <a href="#" class="navigation__list-item">Contact</a>
+					</li>
+				</ul>
+			</nav>
+			<a href="#" class="logo">
+				<img src="images/coverimages.png" alt="logo" />
+			</a>
+			<ul class="header__social">
+				<li class="header__social-item">
+					<a class="header__social-link header__social-link--twitter" href="#">
+						<img class="header__social-icon" viewBox="0 0 100 100" src="images/vector12.png" height="41"></img>
+					</a>
+				</li>
+				<li class="header__social-item">
+					<a class="header__social-link header__social-link--facebook" href="#">
+						<img class="header__social-icon" viewBox="0 0 100 100" height="41" src="images/vector13.png"></img>
+					</a>
+				</li>
+				<li class="header__social-item">
+					<a class="header__social-link header__social-link--linkedin" href="#">
+						<img class="header__social-icon" viewBox="0 0 100 100" src="images/Vector14.png" height="41"></img>
+					</a>
+				</li>
+			</ul>
+			<div class="btn-section">
+				<a href="#" class="menu-btn"> <span></span>
+				</a>
+				<!-- Навігаційне меню -->
+				<nav class="navigation1" id="navigation">
+					<ul class="navigation__list1">
+						<li class="navigation__item"> <a href="#" class="navigation__list-item">Home</a>
+						</li>
+						<li class="navigation__item"> <a href="#" class="navigation__list-item">Product</a>
+						</li>
+						<li class="navigation__item"> <a href="#prising" class="navigation__list-item">Pricing</a>
+						</li>
+						<li class="navigation__item"> <a href="#" class="navigation__list-item">About</a>
+						</li>
+						<li class="navigation__item"> <a href="#" class="navigation__list-item">Contact</a>
+						</li>
+					</ul>
+				</nav>
+			</div>
+		</div>
+		</div>
+		<section class="section hero-section">
+			<div class="hero-container">
+				<h1 class="hero__title">The best products start with Figma</h1>
+				<p class="hero__undertitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+			</div>
+			<button class="button" type="button">Try For Free</button>
+		</section>
+	</header>
+	<main class="container">
+		<section id="product" class="main-text">
+			<h2 class="main-text__title">Features</h2>
+			<p class="main-text__text">Most calendars are designed for teams</p>
+			<div class="main-text__features">
+				<div class="main-text__features-item">
+					<img src="images/circle.png" alt="Drawing">
+					<h3 class="main-text__title-low">OpenType features Variable fonts</h3>
+					<p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+				</div>
+				<div class="main-text__features-item">
+					<img src="images/draw.png" alt="Draw">
+					<h3 class="main-text__title-low">Design with real data</h3>
+					<p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+				</div>
+				<div class="main-text__features-item">
+					<img src="images/pnsel.png" alt="Brush">
+					<h3 class="main-text__title-low">Fastetst way to take action</h3>
+					<p>Slate helps you see how many more days you need to work to reach your financial goal</p>
+				</div>
+				<div class="main-text__image">
+					<img src="images/screen.png" alt="Screen">
+				</div>
+			</div>
+			<div class="call-to-action">
+				<div class="call-to-action__item">
+					<h2 class="main-text__title">Fastets way to organize</h2>
+					<p class="main-text__text">Most calendars are designed for teams</p>
+					<button class="button-bold-text">Try for Free</button>
+				</div>
+				<div class="call-to-action__image">
+					<img src="images/Frame 18.png" alt="Screen">
+				</div>
+			</div>
+		</section>
+		<section class="newsletter">
+			<div class="newsletter__title">
+				<h3 class="main-text__title-low">At your fingertips</h3>
+				<h2 class="main-text__title">Lightning fast 
                   prototyping </h2>
-            </div>
-            <div class="newsletter__image">
-                <img src="images/vector3.png" alt="Newsletter">
-            </div>
-            <div class="newsletter__form">
-                <h3 class="main-text__title-low">Subscribe to our newsletter</h3>
-                <p class="main-text__text">Available exclusivery on Figmaland</p>
-                <form class="subscription">
-                    <input type="email" name="email" placeholder="Your Email" class="input-text" required>
-                    <input type="submit" value="Subscribe" class="button-main-text">
-                </form>
-            </div>
-        </section>
-            <section class="partners">
-              <div class="partners__header">
-                <h2 class="partners__title">Partners</h2>
-                <p class="partners__undertitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
-              </div>
-              <div class="partners__icons">
-                <a href="#"><img src="images/google.png" alt="partner-Google"></a>
-                <a href="#"><img src="images/amazon.png" alt="partner-Amazon"></a>
-                <a href="#"><img src="images/microsoft.png" alt="partner-Microsoft"></a>
-                <a href="#"><img src="images/uber.png" alt="partner-Uber"></a>
-                <a href="#"><img src="images/dropbox.png" alt="partner-Dropbox"></a>
-                <a href="#"><img src="images/google.png" alt="partner-Google"></a>
-                <a href="#"><img src="images/uber.png" alt="partner-Uber"></a>
-                <a href="#"><img src="images/amazon.png" alt="partner-Amazon"></a>
-
-              </div>
-              <a href="#" class="button">Try For Free</a>
-            </section>
-            
-          <section class="testimonials">
-              <h2 class="testimonials__title">Testimonials</h2>
-              <figure class="testimonials__ibm ibm">
-                <img class="ibm__img" src="images/ibm.png" alt="ibm">
-            </figure>
-              <p class="testimonials__undertitle">Most calendars are designed for teams.Slate is designed for
-                  freelancers<br> who want a simple way to plan
-                  their schelude.</p>            
-                  <div class="client-png">
-                    <img src="images/client.png" alt="">
-                  </div>
-                  <a href="#" class="button">more information</a>
-          </section>
-        </main>
-          <section id="pricing" class="price">
-            <h2 class="price__title">Pricing</h2>
-            <p class="price__text">Most calendars are designed for teams</p>
-            <div class="price__cards">
-                <div class="price__light">
-                    <h3 class="price__card-title">Free</h3>
-                    <p class="price__card-text">Organize across all apps by hand</p>
-                    <div class="price__block">
-                        <p class="price__number">0</p>
-                        <p class="price__dollar">$</p>
-                        <p class="price__text-number">Per Month</p>
-                    </div>
-                    <ul class="price__feature">
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                    </ul>
-                    <button class="button">Order Now</button>
-                </div>
-                <div class="price__contrast">
-                    <h3 class="price__card-title">Standart</h3>
-                    <p class="price__card-text">Organize across all apps by hand</p>
-                    <div class="price__block">
-                        <p class="price__number">10</p>
-                        <p class="price__dollar">$</p>
-                        <p class="price__text-number">Per Month</p>
-                    </div>
-                    <ul class="price__feature">
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                    </ul>
-                    <button class="button">Order Now</button>
-                </div>
-                <div class="price__light">
-                    <h3 class="price__card-title">Business</h3>
-                    <p class="price__card-text">Organize across all apps by hand</p>
-                    <div class="price__block">
-                        <p class="price__number">99</p>
-                        <p class="price__dollar">$</p>
-                        <p class="price__text-number">Per Month</p>
-                    </div>
-                    <ul class="price__feature">
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                        <li>Pricing feature</li>
-                    </ul>
-                    <button class="button">Order Now</button>
-                </div>
-            </div>
-        </section>
-        <main class="container">
-          <section class="contacts" id="contact">
-            <div class="contacts__header">
-                <h2 class="contacts__title">Contact Us</h2>
-                <h3 class="contacts__sub-title">Most calendars are designed for teams. Slate is designed for freelancers</h3>
-            </div>
-            <div class="contacts__block">
-                <div class="contacts__form form">
-                    <form class="form__form" action="post">
-                      <p class="contacts__form-text">Contact us</p>
-                        <input class="form__input" type="text" placeholder="Your Name">
-                        <input class="form__input" type="text" placeholder="Your Email">
-                        <input class="form__input" type="text" placeholder="Your message">
-                        <button class="button" type="button">Send</button>
-                    </form>
-                </div>
-                <div class="contacts__map">
-                  <div class="contacts__map-header">
-                    <ul class="contacts__map-list contacts">
-                      <li class="contacts__map-item">
-                        <img class="contacts__map-item-img" src="images/Vector4.png" alt="map pointer">
-                        <a class="contacts__map-item-text" href="https://www.google.com/search?q=google+maps+usa" target="_blank">6386 Spring St undefined Anchorage, Georgia 12473 United States</a>
-                      </li>
-                      <li class="contacts__map-item">
-                        <img class="contacts__map-item-img" src="images/Vector5.png" alt="mobile phone">
-                        <a class="contacts__map-item-text" href="tel:8435550130">(843) 555-0130</a>
-                      </li>
-                      <li class="contacts__map-item">
-                        <img class="contacts__map-item-img" src="images/Vector6.png" alt="letter">
-                        <a class="contacts__map-item-text" href="#">willie.jennings@example.com</a>
-                      </li>
-                    </ul>
-                  </div>
-                  <div class="map__img-container">
-                    <img class="map__img" src="images/map.png" alt="screen from google-map" style="height: 323px; width: 516px;">
-                  </div>
-                  <div class="contacts__map-links links" style="float: left;">
-                    <ul class="links__list">
-                      <li class="links__item"><a class="links__item-link" href="#"><img class="links__item-img" src="images/Vector7.png" alt="twitter logo"></a></li>
-                      <li class="links__item"><a class="links__item-link" href="#"><img class="links__item-img" src="images/Vector8.png" alt="facebook logo"></a></li>
-                      <li class="links__item"><a class="links__item-link" href="#"><img class="links__item-img" src="images/Vector9.png" alt="in logo"></a></li>
-                    </ul>
-                  </div>
-                </div>
-            </div>
-        </section>
-      </main>
-      <footer class="footer">
-        <div class="footer__nav">
-          <h4 class="footer__nav-list-title">Pages</h4>
-          <ul class="footer__nav-list">
-            <li class="footer__nav-list-item"><a href="index.html">Home</a></li>
-            <li class="footer__nav-list-item"><a href="#product">Product</a></li>
-            <li class="footer__nav-list-item"><a href="#price">Pricing</a></li>
-            <li class="footer__nav-list-item"><a href="#about">About</a></li>
-            <li class="footer__nav-list-item"><a href="#contact">Contact</a></li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <h4 class="footer__menu-list-title">Tomothy</h4>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-list-item">Eleanor Edwards</li>
-            <li class="footer__menu-list-item">Ted Robertson</li>
-            <li class="footer__menu-list-item">Annette Russell</li>
-            <li class="footer__menu-list-item">Jennie Mckinney</li>
-            <li class="footer__menu-list-item">Gloria Richards</li>
-          </ul>
-        </div>
-        <div class="footer__menu">
-          <h4 class="footer__menu-list-title">Jane Black</h4>
-          <ul class="footer__menu-list">
-            <li class="footer__menu-list-item">Philip Jones</li>
-            <li class="footer__menu-list-item">Product</li>
-            <li class="footer__menu-list-item">Colleen Russell</li>
-            <li class="footer__menu-list-item">Marvin Hawkins</li>
-            <li class="footer__menu-list-item">Bruce Simmmons</li>
-          </ul>
-        </div>
-        <div class="footer__contacts">
-          <ul class="footer__contacts-list">
-            <li class="footer__contacts-list-item">
-              <img src="images/vector10.png" alt="image of map">
-              <a href="https://www.google.com/maps/search/7480+Mockingbird" target="_blank">7480 Mockingbird Hill
+			</div>
+			<div class="newsletter__image">
+				<img src="images/vector3.png" alt="Newsletter">
+			</div>
+			<div class="newsletter__form">
+				<h3 class="main-text__title-low">Subscribe to our newsletter</h3>
+				<p class="main-text__text">Available exclusivery on Figmaland</p>
+				<form class="subscription">
+					<input type="email" name="email" placeholder="Your Email" class="input-text" required>
+					<input type="submit" value="Subscribe" class="button-main-text">
+				</form>
+			</div>
+		</section>
+		<section class="partners">
+			<div class="partners__header">
+				<h2 class="partners__title">Partners</h2>
+				<p class="partners__undertitle">Most calendars are designed for teams. Slate is designed for freelancers</p>
+			</div>
+			<div class="partners__icons">
+				<a href="#">
+					<img src="images/google.png" alt="partner-Google">
+				</a>
+				<a href="#">
+					<img src="images/amazon.png" alt="partner-Amazon">
+				</a>
+				<a href="#">
+					<img src="images/microsoft.png" alt="partner-Microsoft">
+				</a>
+				<a href="#">
+					<img src="images/uber.png" alt="partner-Uber">
+				</a>
+				<a href="#">
+					<img src="images/dropbox.png" alt="partner-Dropbox">
+				</a>
+				<a href="#">
+					<img src="images/google.png" alt="partner-Google">
+				</a>
+				<a href="#">
+					<img src="images/uber.png" alt="partner-Uber">
+				</a>
+				<a href="#">
+					<img src="images/amazon.png" alt="partner-Amazon">
+				</a>
+			</div> <a href="#" class="button">Try For Free</a>
+		</section>
+		<section class="testimonials">
+			<h2 class="testimonials__title">Testimonials</h2>
+			<figure class="testimonials__ibm ibm">
+				<img class="ibm__img" src="images/ibm.png" alt="ibm">
+			</figure>
+			<p class="testimonials__undertitle">Most calendars are designed for teams.Slate is designed for freelancers
+				<br>who want a simple way to plan their schelude.</p>
+			<div class="client-png">
+				<img src="images/client.png" alt="">
+			</div> <a href="#" class="button">more information</a>
+		</section>
+	</main>
+	<section id="pricing" class="price">
+		<h2 class="price__title">Pricing</h2>
+		<p class="price__text">Most calendars are designed for teams</p>
+		<div class="price__cards">
+			<div class="price__light">
+				<h3 class="price__card-title">Free</h3>
+				<p class="price__card-text">Organize across all apps by hand</p>
+				<div class="price__block">
+					<p class="price__number">0</p>
+					<p class="price__dollar">$</p>
+					<p class="price__text-number">Per Month</p>
+				</div>
+				<ul class="price__feature">
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+				</ul>
+				<button class="button">Order Now</button>
+			</div>
+			<div class="price__contrast">
+				<h3 class="price__card-title">Standart</h3>
+				<p class="price__card-text">Organize across all apps by hand</p>
+				<div class="price__block">
+					<p class="price__number">10</p>
+					<p class="price__dollar">$</p>
+					<p class="price__text-number">Per Month</p>
+				</div>
+				<ul class="price__feature">
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+				</ul>
+				<button class="button">Order Now</button>
+			</div>
+			<div class="price__light">
+				<h3 class="price__card-title">Business</h3>
+				<p class="price__card-text">Organize across all apps by hand</p>
+				<div class="price__block">
+					<p class="price__number">99</p>
+					<p class="price__dollar">$</p>
+					<p class="price__text-number">Per Month</p>
+				</div>
+				<ul class="price__feature">
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+					<li>Pricing feature</li>
+				</ul>
+				<button class="button">Order Now</button>
+			</div>
+		</div>
+	</section>
+	<main class="container">
+		<section class="contacts" id="contact">
+			<div class="contacts__header">
+				<h2 class="contacts__title">Contact Us</h2>
+				<h3 class="contacts__sub-title">Most calendars are designed for teams. Slate is designed for freelancers</h3>
+			</div>
+			<div class="contacts__block">
+				<div class="contacts__form form">
+					<form class="form__form" action="post">
+						<p class="contacts__form-text">Contact us</p>
+						<input class="form__input" type="text" placeholder="Your Name">
+						<input class="form__input" type="text" placeholder="Your Email">
+						<input class="form__input" type="text" placeholder="Your message">
+						<button class="button" type="button">Send</button>
+					</form>
+				</div>
+				<div class="contacts__map">
+					<div class="contacts__map-header">
+						<ul class="contacts__map-list contacts">
+							<li class="contacts__map-item">
+								<img class="contacts__map-item-img" src="images/Vector4.png" alt="map pointer"> <a class="contacts__map-item-text" href="https://www.google.com/search?q=google+maps+usa" target="_blank">6386 Spring St undefined Anchorage, Georgia 12473 United States</a>
+							</li>
+							<li class="contacts__map-item">
+								<img class="contacts__map-item-img" src="images/Vector5.png" alt="mobile phone"> <a class="contacts__map-item-text" href="tel:8435550130">(843) 555-0130</a>
+							</li>
+							<li class="contacts__map-item">
+								<img class="contacts__map-item-img" src="images/Vector6.png" alt="letter"> <a class="contacts__map-item-text" href="#">willie.jennings@example.com</a>
+							</li>
+						</ul>
+					</div>
+					<div class="map__img-container">
+						<img class="map__img" src="images/map.png" alt="screen from google-map" style="height: 323px; width: 516px;">
+					</div>
+					<div class="contacts__map-links links" style="float: left;">
+						<ul class="links__list">
+							<li class="links__item">
+								<a class="links__item-link" href="#">
+									<img class="links__item-img" src="images/Vector7.png" alt="twitter logo">
+								</a>
+							</li>
+							<li class="links__item">
+								<a class="links__item-link" href="#">
+									<img class="links__item-img" src="images/Vector8.png" alt="facebook logo">
+								</a>
+							</li>
+							<li class="links__item">
+								<a class="links__item-link" href="#">
+									<img class="links__item-img" src="images/Vector9.png" alt="in logo">
+								</a>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</section>
+	</main>
+	<footer class="footer">
+		<div class="footer__nav">
+			<h4 class="footer__nav-list-title">Pages</h4>
+			<ul class="footer__nav-list">
+				<li class="footer__nav-list-item"><a href="index.html">Home</a>
+				</li>
+				<li class="footer__nav-list-item"><a href="#product">Product</a>
+				</li>
+				<li class="footer__nav-list-item"><a href="#price">Pricing</a>
+				</li>
+				<li class="footer__nav-list-item"><a href="#about">About</a>
+				</li>
+				<li class="footer__nav-list-item"><a href="#contact">Contact</a>
+				</li>
+			</ul>
+		</div>
+		<div class="footer__menu">
+			<h4 class="footer__menu-list-title">Tomothy</h4>
+			<ul class="footer__menu-list">
+				<li class="footer__menu-list-item">Eleanor Edwards</li>
+				<li class="footer__menu-list-item">Ted Robertson</li>
+				<li class="footer__menu-list-item">Annette Russell</li>
+				<li class="footer__menu-list-item">Jennie Mckinney</li>
+				<li class="footer__menu-list-item">Gloria Richards</li>
+			</ul>
+		</div>
+		<div class="footer__menu">
+			<h4 class="footer__menu-list-title">Jane Black</h4>
+			<ul class="footer__menu-list">
+				<li class="footer__menu-list-item">Philip Jones</li>
+				<li class="footer__menu-list-item">Product</li>
+				<li class="footer__menu-list-item">Colleen Russell</li>
+				<li class="footer__menu-list-item">Marvin Hawkins</li>
+				<li class="footer__menu-list-item">Bruce Simmmons</li>
+			</ul>
+		</div>
+		<div class="footer__contacts">
+			<ul class="footer__contacts-list">
+				<li class="footer__contacts-list-item">
+					<img src="images/vector10.png" alt="image of map"> <a href="https://www.google.com/maps/search/7480+Mockingbird" target="_blank">7480 Mockingbird Hill
                 undefined</a>
-            </li>
-            <li class="footer__contacts-list-item">
-              <img src="images/vector11.png" alt="image of phone">
-              <a href="tel:2395550108">(239) 555-0108</a>
-            </li>
-            <li class="footer__contacts-list-item">
-              <ul class="social__links">
-                <li class="social__links-item"><a href="#"><img src="images/vector12.png"
-                        alt="twitter logo"></a></li>
-                <li class="social__links-item"><a href="#"><img src="images/vector13.png" alt="facebook logo"></a>
-                </li>
-                <li class="social__links-item"><a href="#"><img src="images/Vector14.png" alt="in logo"></a></li>
-              </ul>
-      
-            </li>
-          </ul>
-        </div>
-      </footer>
-    <script src="main.js"></script>
-    <script src="https://unpkg.com/html-data-include@1.1.1/html-data-include.js"></script>
+				</li>
+				<li class="footer__contacts-list-item">
+					<img src="images/vector11.png" alt="image of phone"> <a href="tel:2395550108">(239) 555-0108</a>
+				</li>
+				<li class="footer__contacts-list-item">
+					<ul class="social__links">
+						<li class="social__links-item">
+							<a href="#">
+								<img src="images/vector12.png" alt="twitter logo">
+							</a>
+						</li>
+						<li class="social__links-item">
+							<a href="#">
+								<img src="images/vector13.png" alt="facebook logo">
+							</a>
+						</li>
+						<li class="social__links-item">
+							<a href="#">
+								<img src="images/Vector14.png" alt="in logo">
+							</a>
+						</li>
+					</ul>
+				</li>
+			</ul>
+		</div>
+	</footer>
+	<script src="main.js"></script>
+	<script src="https://unpkg.com/html-data-include@1.1.1/html-data-include.js"></script>
 </body>
-
 
 </html>
