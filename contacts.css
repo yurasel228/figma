@@ -39,11 +39,13 @@
 .contacts__block {
   display: flex;
     width: 100%;
+    flex-direction: row;
     max-width: 1200px;
     margin: 0 auto;
     border-radius: 20px;
     overflow: hidden;
     flex-wrap: wrap;
+    justify-content: center;
 }
 
 
@@ -99,6 +101,10 @@
 
 .contacts__map-list {
   margin-bottom: 20px;
+  display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+
 }
 
 .contacts__map-item {
@@ -118,6 +124,9 @@
     align-items: center;
     justify-content: center;
     align-content: center;
+    gap: 40px;
+    padding: 30px 0px;
+
 }
 
 .contacts__map-item-img {
@@ -140,4 +149,9 @@ justify-content: center;
   .contacts__map-links {
     margin-top: 20px;
 
+  }
+  @media screen and (max-width: 1000px) {
+    .map__img-container{
+      display: none;
+    }
   }
